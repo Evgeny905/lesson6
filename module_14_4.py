@@ -28,7 +28,7 @@ button_8 = InlineKeyboardButton(text = 'Рассчитать норму кало
 button_9 = InlineKeyboardButton(text = 'Формулы расчёта', callback_data = 'formulas')
 ikb_2.add(button_8)
 ikb_2.add(button_9)
-api = "8119936400:AAHIv6nd3cYJkNclBDlIJaDHTrou5nIMWSA"
+api = ""
 bot = Bot(token = api)
 dp = Dispatcher(bot, storage=MemoryStorage())
 class UserState(StatesGroup):

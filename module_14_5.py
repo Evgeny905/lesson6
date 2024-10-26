@@ -64,7 +64,6 @@ async def set_email(message, state):
 async def set_age(message, state):
     await state.update_data(age_=message.text)
     data = await state.get_data()
-    print(data['username_'], data['email_'], data['age_'])
     add_user(data['username_'], data['email_'], data['age_'])
     await message.answer("Регистрация прошла успешно")
     await state.finish()
